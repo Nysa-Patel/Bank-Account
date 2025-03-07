@@ -1,6 +1,7 @@
 //Name: Nysa Patel
 //Extra: User input through on screen textbox and prompt
 //Class: 1A CIS Intro to Java
+//Project Name: Bank Account: Transactions
 //Date: 02/07/25
 
 
