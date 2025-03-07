@@ -1,8 +1,7 @@
 //Name: Nysa Patel
-//
+//Extra: User input through on screen textbox and prompt
 //Class: 1A CIS Intro to Java
 //Date: 02/07/25
-
 
 //assigning variables
 let bankNum = '5467';
