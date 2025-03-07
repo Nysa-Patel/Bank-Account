@@ -3,8 +3,9 @@
 //Class: 1A CIS Intro to Java
 //Date: 02/07/25
 
+
 //assigning variables
-let bankNum = '5467';
+  let bankNum = '5467';
 
 //for the buttons and reassigning the value of the inputs
 let newplace, newamount, button;
@@ -33,26 +34,37 @@ function setup() {
 }
 
 function draw() {
-  background(0);
+  background(255);
   
   //checks if password is correct
 if (bankNum == '5467') {
+  textFont('Courier New');
+  textStyle(BOLD);
+  fill(0);
     text("Approved", 100, 100)
   }
   
   //List of the past transactions and amount
+  fill(0);
+  textStyle(NORMAL);
   text("Past Transactions: ", 100, 150);
   for (let i= 0; i < pastTransactions.length; i++) {
+    fill(0);
+    textStyle(NORMAL);
     text(pastTransactions[i] + "- $" + pastAmounts[i] + " spent", 100, 180 + i * 30);
   }
 
   //previous
+  fill(200,0,0);
+  textStyle(NORMAL);
   text("Previous Transaction: ", 300, 150);
   
   //calls to add function
   Add();
   
   //displays the user inputs
+  fill(200,0,0);
+  textStyle(NORMAL);
   text(newplacein + "- $" + newamountin + " spent", 300, 200)
   
 }
@@ -65,14 +77,19 @@ function Add() {
     sum+=pastAmounts[i];
     i++;
   }
+  fill(0);
+  textStyle(NORMAL);
   text("Total: $" + sum, 100, 470);
   
+  fill(200,0,0);
+  textStyle(NORMAL);
   text("Last place a transaction was made: ", 100, 520);
+  fill(200,0,0);
+  textStyle(NORMAL);
   text("Amount spent at that place: ", 100, 580);
   
   //reassignes the values that the user put in
   newplacein = newplace.value();
   newamountin = newamount.value();
-
 
 }
